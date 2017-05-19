@@ -8,3 +8,4 @@ public class Estacionar implements Comparator<Veiculo>{
 	public int compare(Veiculo v1, Veiculo v2) {
 		return v1.getPlaca().compareTo(v2.getPlaca());
 	}
+}
