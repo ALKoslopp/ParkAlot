@@ -1,0 +1,41 @@
+# ParkAlot
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Veiculo v1 = new Veiculo("piu9087", "Duster", "Adlan", "097777");
+		Veiculo v2 = new Veiculo("lky4352", "Fusca", "Spoct", "909988");
+		Veiculo v3 = new Veiculo("tyu6579", "A5", "will", "9809757");
+		Veiculo v4 = new Veiculo("tyu1279", "Gol", "carl", "989877");
+		Veiculo v5 = new Veiculo("tyu6969", "A3", "Jack", "98067557");
+		Veiculo v6 = new Veiculo("tyu6579", "Astra", "will", "9809757");
+		
+		List<Veiculo> lista = new ArrayList<>();
+		lista.add(v1);
+		lista.add(v2);
+		lista.add(v3);
+		lista.add(v4);
+		lista.add(v5);
+		lista.add(v6);
+		System.out.println("Veiculos estacionados");
+		
+		for(Veiculo v:lista)
+			System.out.println(v.getModelo()+", "+v.getPlaca()+" foi estacionado");
+		
+		System.out.println("---------------------------------------");
+		
+		lista.remove(v2);
+		System.out.println("O "+v2.getModelo()+" foi removido "+" total a pagar "+ ValorCarro.precoPorHora(3.00));
+		
+		System.out.println("----------------------------");
+		for(Veiculo v:lista)
+			System.out.println(v.getModelo()+", "+v.getPlaca()+" foi estacionado");
+
+	}
+
+}
