@@ -77,3 +77,4 @@ public class Veiculo implements Comparable<Veiculo>{
 	public int compareTo(Veiculo v) {
 		return this.getPlaca().compareTo(v.getPlaca());
 	}
+}
